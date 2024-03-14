@@ -6,7 +6,7 @@ def isEmpty(queue: List[float]) -> bool:
         return True
     return False
 
-def funcQue(maxSize: int=0, *args: float) -> List[float]:
+def statQueue(maxSize: int=0, *args: float) -> List[float]:
     if maxSize == 0:
         maxSize = float('inf')
     
@@ -46,7 +46,7 @@ def funcQue(maxSize: int=0, *args: float) -> List[float]:
 def main():
     try:
         size = 10
-        queue = funcQue(size)
+        queue = statQueue(size)
         # for _ in range(4):
         #     queue('E', _)
         print(f"Queue: {queue()}")

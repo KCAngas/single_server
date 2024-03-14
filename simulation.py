@@ -1,9 +1,9 @@
-from staticq import funcQue as fq
+from staticq import statQueue as sq
 from typing import *
 import time
 
 try:
-    clock: List[float] = fq(17, 0, 0.4, 1.6, 2.1, 2.4, 3.1, 3.3, 3.8, 4.0, 4.9, 5.6, 5.8, 7.2, 8.6)
+    clock: List[float] = sq(17, 0, 0.4, 1.6, 2.1, 2.4, 3.1, 3.3, 3.8, 4.0, 4.9, 5.6, 5.8, 7.2, 8.6)
     customer: Dict = {0.4: 'A', 1.6: 'A', 2.1: 'A', 2.4: 'D', 3.1: 'D', 
                 3.3: 'D', 3.8: 'A', 4.0: 'A', 4.9: 'D', 5.6: 'A', 
                 5.8: 'A', 7.2: 'A', 8.6: 'D'}
